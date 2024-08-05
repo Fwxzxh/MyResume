@@ -1,6 +1,8 @@
 #set document(
-  title: "Curriculum",
-  author: "Jorge David Elihu Mejía Castro"
+  title: "Resume",
+  author: "Jorge David Elihu Mejía Castro",
+  date: auto,
+  keywords: ("Resume", "Jorge David Elihu Mejía Castro", "Technology")
 )
 #set page(
   paper: "us-letter"
@@ -11,6 +13,7 @@
   size: 12pt,
 )
 
+// A Function to generate a resume item
 #let WorkItem(Company, Title, Date, Keywords, Experiences) = {
   text(18pt, weight: "bold")[#Company]
   linebreak()
@@ -31,6 +34,7 @@
   ]
 }
 
+// A function to Generate a styled header
 #let NewSectionHeader(Title) = {
   text(22pt, weight: "bold")[
     #underline(offset: 5pt)[
@@ -39,7 +43,7 @@
   ]
 }
 
-// Header
+// Header of my document
 #par(justify: false)[
   #align(left)[
     #text(28pt, weight: "black")[
@@ -54,6 +58,7 @@
     ]
   ]
 ]
+
 #line(length: 100%, end: none)
 
 // Keywords
@@ -120,6 +125,3 @@
     "",
   )
 )
-
-
-
