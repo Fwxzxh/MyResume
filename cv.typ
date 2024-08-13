@@ -63,7 +63,7 @@
 // A function to Generate a styled header
 #let NewSectionHeader(Title) = {
   text(22pt, weight: "bold")[
-    #underline(offset: 5pt)[
+    #underline(extent: 2pt, stroke: blue)[
       #Title
     ]
   ]
@@ -92,7 +92,9 @@
 // Keywords
 #par()[
   #text(size: 14pt)[
-  Developer, Problem-Solving, Leader, Lifelong learner.
+    Keywords:
+
+    Developer, Problem-Solving, Leader, Innovation, Lifelong learner.
   ]
 ]
 
@@ -105,13 +107,13 @@
   "Ago. 2022 - Present",
   "HMI Developer & Internal Tools Architect",
   (
-    "Upgraded existing frameworks and tools to enhance efficiency and alleviate workflow pain points.",
     "Day to day work in C#, C/C++, Cmake, Python and Go.",
     "Enforcement and application of Agile Methodologies.",
     "Proficiency Game engines like Unity and Godot.",
     "Proficiency in Unix & Windows OS, IPC, CAN, Networking, and reverse engineering.",
     "Played a pivotal role in code reviews and conducted static analysis to uphold quality standards.",
-    "Proactively reviewed and analyzed requirements to deliver tailored solutions.",
+    "Proactively reviewed and analyzed requirements to deliver solid solutions.",
+    "Upgraded existing frameworks and tools to enhance efficiency and alleviate workflow pain points.",
   )
 )
 
@@ -122,10 +124,10 @@
   "Team Lead",
   (
     "Lead of a team of 4 developers.",
-    "Development of applications for small & medium size businesses.",
+    "Development of applications and platforms for small & medium size businesses.",
+    "Focus on fullfil customer needs and delivering a reliable solution.",
     "C#, F#, WPF, SQL Databases, Python, HTML, JS, Go, Rust.",
-    "Requirements Writing.",
-    "Scrum Methodology."
+    "Scrum Methodology.",
   )
 )
 
@@ -155,7 +157,7 @@
 
 #terms.item(
   "Programming Languages",
-  "C#, C/C++, Python, Go, Rust, Swift.",
+  "C#/F#, C/C++, Python, Go, Rust, Swift, Java, Kotlin, SQL.",
 )
 #terms.item(
   "Developer Tools",
@@ -171,5 +173,5 @@
 )
 #terms.item(
   "Technical Interests",
-  "Compilers, Operating Systems, Artificial Intelligence, Game Engines."
+  "Compilers, Operating Systems, Artificial Intelligence, Game Engines, Functional Programming."
 )
