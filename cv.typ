@@ -17,7 +17,7 @@
 #let Header2 = 16pt
 #let Header3 = 14pt
 
-#let EducationItem(Institution, Date, Title, BulletPoints) = {
+#let EducationItem(Institution: "", Date: "", Title: "", BulletPoints: ()) = {
   text(Header1, weight: "bold")[#Institution]
   linebreak()
 
@@ -35,7 +35,7 @@
 }
 
 // A Function to generate a resume item
-#let WorkItem(Company, Title, Date, Keywords, Experiences) = {
+#let WorkItem(Company: "", Title: "", Date: "", Keywords: "", Experiences: ()) = {
 
   text[
     #text(Header1, weight: "bold")[#Company]
@@ -105,11 +105,11 @@
 #NewSectionHeader("Work Experience")
 
 #WorkItem(
-  "Visteon Corporation",
-  "Software Engineer",
-  "Ago. 2022 - Present",
-  "HMI Developer & Internal Tools Architect",
-  (
+  Company:"Visteon Corporation",
+  Title: "Software Engineer",
+  Date:"Ago. 2022 - Present",
+  Keywords:"HMI Developer & Internal Tools Architect",
+  Experiences: (
     "Day to day work in C#, C/C++, Cmake, Python, Bash & Powershell.",
     "Proficiency Game engines like Unity and Godot.",
     "Proficiency in Unix & Windows OS, IPC, CAN, Networking, and reverse engineering.",
@@ -121,11 +121,11 @@
 )
 
 #WorkItem(
-  "Freelance Developer",
-  "",
-  "Ene. 2021 - Feb 2023",
-  "Team Lead",
-  (
+  Company: "Freelance Developer",
+  Title: "",
+  Date: "Ene. 2021 - Feb 2023",
+  Keywords: "Team Lead",
+  Experiences: (
     "Lead of a team of 4 developers.",
     "Development of applications and platforms for small & medium size businesses.",
     "Focus on fullfil customer needs & delivering a reliable solution.",
@@ -136,11 +136,11 @@
 )
 
 #WorkItem(
-  "CIDESI",
-  "",
-  "Ago. 2021 - March 2022",
-  "Social Service",
-  (
+  Company: "CIDESI",
+  Title: "",
+  Date: "Ago. 2021 - March 2022",
+  Keywords: "Social Service",
+  Experiences: (
     "Computer vision algorithms implementation and theory in Python and Matlab",
     "Search & Cleaning of free flowers images for the validation of a flower-counting algorithm",
     "Creation of a open Dataset of flower images.",
@@ -151,10 +151,10 @@
 #NewSectionHeader("Education")
 
 #EducationItem(
-  "Tecnológico Nacional de México Campus Querétaro",
-  "2017-2023",
-  "Computer engineering, with specialization in distributed systems.",
-  ()
+  Institution: "Tecnológico Nacional de México Campus Querétaro",
+  Date:"2017-2023",
+  Title:"Computer engineering, with specialization in distributed systems.",
+  BulletPoints:()
 )
 
 #NewSectionHeader("Skills")
