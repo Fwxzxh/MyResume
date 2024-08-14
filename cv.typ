@@ -37,12 +37,12 @@
 // A Function to generate a resume item
 #let WorkItem(Company, Title, Date, Keywords, Experiences) = {
 
-  stack(
-    dir: ltr,
-    spacing: 1fr,
-    text(Header1, weight: "bold")[#Company],
-    text(Header1)[#Date]
-  )
+  text[
+    #text(Header1, weight: "bold")[#Company]
+    #h(1fr)
+    #text(Header1)[#Date]
+  ]
+  linebreak()
 
   if Title != "" {
     text(Header2, weight: "semibold", style: "italic")[#Title]
@@ -53,6 +53,7 @@
     text(Header3, style: "italic")[#Keywords]
     linebreak()
   }
+
   if Experiences != () {
     for value in Experiences [
       - #value
@@ -76,9 +77,12 @@
       *Jorge David Elihu Mejía Castro*
     ]
     #text(16pt, weight: "light")[
-      `jdemeca01@gmail.com` #sym.emptyset
-      (442) 189 7740 #sym.emptyset
-      México, Querétaro Querétaro #sym.emptyset
+      #link("mailto:jdemeca01@gmail.com")
+      #sym.emptyset
+      (442) 189 7740
+      #sym.emptyset
+      México, Querétaro Querétaro
+      #sym.emptyset
       #show link: underline
       #link("https://github.com/Fwxzxh")[github.com/Fwxzxh]
       #sym.emptyset
@@ -92,9 +96,8 @@
 // Keywords
 #par()[
   #text(size: 14pt)[
-    Keywords:
-
-    Developer, Problem-Solving, Leader, Innovation, Lifelong learner.
+    Hi! I’m Jorge, a developer with a strong problem-solving mindset and an unwavering passion for lifelong learning.
+    My journey in software development has allowed me to cultivate a deep understanding of emerging technologies and expertise in crafting innovative solutions.
   ]
 ]
 
@@ -107,13 +110,13 @@
   "Ago. 2022 - Present",
   "HMI Developer & Internal Tools Architect",
   (
-    "Day to day work in C#, C/C++, Cmake, Python and Go.",
-    "Enforcement and application of Agile Methodologies.",
+    "Day to day work in C#, C/C++, Cmake, Python, Bash & Powershell.",
     "Proficiency Game engines like Unity and Godot.",
     "Proficiency in Unix & Windows OS, IPC, CAN, Networking, and reverse engineering.",
+    "Played a relevant role in HMI Automotive Software development and Company demos.",
     "Played a pivotal role in code reviews and conducted static analysis to uphold quality standards.",
     "Proactively reviewed and analyzed requirements to deliver solid solutions.",
-    "Upgraded existing frameworks and tools to enhance efficiency and alleviate workflow pain points.",
+    "Upgraded existing frameworks and create new tools to enhance efficiency and alleviate workflow pain points.",
   )
 )
 
@@ -125,7 +128,8 @@
   (
     "Lead of a team of 4 developers.",
     "Development of applications and platforms for small & medium size businesses.",
-    "Focus on fullfil customer needs and delivering a reliable solution.",
+    "Focus on fullfil customer needs & delivering a reliable solution.",
+    "Software solutions helped customers to improve current workflows and grow revenue.",
     "C#, F#, WPF, SQL Databases, Python, HTML, JS, Go, Rust.",
     "Scrum Methodology.",
   )
@@ -140,7 +144,7 @@
     "Computer vision algorithms implementation and theory in Python and Matlab",
     "Search & Cleaning of free flowers images for the validation of a flower-counting algorithm",
     "Creation of a open Dataset of flower images.",
-    "Cleaning, segmentation & counting of flowers via Computer vision algorithms.",
+    "Cleaning, segmentation & counting of flowers via Computer vision algorithms and frameworks.",
   )
 )
 
@@ -157,11 +161,15 @@
 
 #terms.item(
   "Programming Languages",
-  "C#/F#, C/C++, Python, Go, Rust, Swift, Java, Kotlin, SQL.",
+  "C#/F#, C/C++, Python, Go, Rust, Swift, Java, Kotlin, SQL, Bash, Powershell.",
 )
 #terms.item(
   "Developer Tools",
   "CANalizer, Git, GitHub, Jira, GDB, RenderDoc, Unity, Godot, Blender."
+)
+#terms.item(
+  "Operating Systems",
+  "Windows, MacOs, Linux, QNX."
 )
 #terms.item(
   "Frameworks",
@@ -170,6 +178,18 @@
 #terms.item(
   "Languages",
   "Spanish, English."
+)
+#terms.item(
+  "Soft Technical Skills",
+  text()[
+    Data Analysis (Collecting, Processing & interpreting)
+    #linebreak()
+    Project Management (Planing, Organizing & Executing)
+    #linebreak()
+    Technical Writing (Creating clear & concise technical documentation)
+    #linebreak()
+    Presentation Skills (Communicating technical information effectively to to all audiences)
+  ]
 )
 #terms.item(
   "Technical Interests",
