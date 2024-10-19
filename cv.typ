@@ -94,12 +94,12 @@
 #line(length: 100%, end: none)
 
 // Keywords
-#par()[
-  #text(size: 14pt)[
-    Hi! I’m Jorge, a developer with a strong problem-solving mindset and an unwavering passion for lifelong learning.
-    My journey in software development has allowed me to cultivate a deep understanding of emerging technologies and expertise in crafting innovative solutions.
-  ]
-]
+// #par()[
+//   #text(size: 14pt)[
+//     Hi! I’m Jorge, a developer with a strong problem-solving mindset and an unwavering passion for lifelong learning.
+//     My journey in software development has allowed me to cultivate a deep understanding of emerging technologies and expertise in crafting innovative solutions.
+//   ]
+// ]
 
 // Items
 #NewSectionHeader("Work Experience")
@@ -110,40 +110,40 @@
   Date:"Ago. 2022 - Present",
   Keywords:"HMI Developer & Internal Tools Architect",
   Experiences: (
-    "Day to day work in C#, C/C++, Cmake, Python, Bash & Powershell.",
-    "Proficiency Game engines like Unity and Godot.",
-    "Proficiency in Unix & Windows OS, IPC, CAN, Networking, and reverse engineering.",
-    "Played a relevant role in HMI Automotive Software development and Company demos.",
-    "Played a pivotal role in code reviews and conducted static analysis to uphold quality standards.",
+    "Key role in the development of v363, v710, v769 & p758 ford programs HMI.",
+    "Led code reviews and static analysis to uphold quality standards.",
     "Proactively reviewed and analyzed requirements to deliver solid solutions.",
-    "Upgraded existing frameworks and create new tools to enhance efficiency and alleviate workflow pain points.",
+    "Participated in CES concepts, representing the company's solutions.",
+    "Led the upgrade of existing legacy frameworks to enhance efficiency and alleviate workflow pain points.",
+    "Led the creation of new tools and frameworks to enhance developer productivity.",
+    "Skills in Unix, IPC, CAN, Networking, reverse engineering data analysis and data engineering for internal projects.",
   )
 )
 
 #WorkItem(
   Company: "Freelance Developer",
-  Title: "",
+  Title: "Team Lead",
   Date: "Ene. 2021 - Feb 2023",
-  Keywords: "Team Lead",
+  // Keywords: "Team Lead",
   Experiences: (
-    "Lead of a team of 4 developers.",
-    "Development of applications and platforms for small & medium size businesses.",
-    "Focus on fullfil customer needs & delivering a reliable solution.",
-    "Software solutions helped customers to improve current workflows and grow revenue.",
-    "C#, F#, WPF, SQL Databases, Python, HTML, JS, Go, Rust.",
-    "Scrum Methodology.",
+    "Coordinated a team of 4 developers to create software solutions for small and medium-sized businesses.",
+    "Developed custom applications that helped clients to improve internal processes and increase revenue.",
+    "Implemented Agile workflows in the team.",
+    "Focus on fulfill customer needs & delivering a reliable solution.",
+    "Designed a management platform for a retail store that increased sales by 15%",
   )
 )
 
 #WorkItem(
   Company: "CIDESI",
-  Title: "",
+  Title: "Intern",
   Date: "Ago. 2021 - March 2022",
   Keywords: "Social Service",
   Experiences: (
     "Computer vision algorithms implementation and theory in Python and Matlab",
     "Search & Cleaning of free flowers images for the validation of a flower-counting algorithm",
     "Creation of a open Dataset of flower images.",
+    "Said Dataset allowed researchers to improve the accuracy of the flower-counting algorithm by 20%",
     "Cleaning, segmentation & counting of flowers via Computer vision algorithms and frameworks.",
   )
 )
@@ -173,7 +173,7 @@
 )
 #terms.item(
   "Frameworks",
-  "WPF, AvaloniaUI, QT, Robot Framework, OpenCv, TensorFlow, FastApi."
+  "WPF, AvaloniaUI, QT, Robot Framework, OpenCV, TensorFlow, FastApi."
 )
 #terms.item(
   "Languages",
@@ -184,9 +184,9 @@
   text()[
     Data Analysis (Collecting, Processing & interpreting)
     #linebreak()
-    Project Management (Planing, Organizing & Executing)
+    Project Management (Planning, Organizing & Executing)
     #linebreak()
-    Technical Writing (Creating clear & concise technical documentation)
+    Technical Writing (Writing clear & concise technical documentation)
     #linebreak()
     Presentation Skills (Communicating technical information effectively to to all audiences)
   ]
