@@ -79,8 +79,6 @@
     #text(16pt, weight: "light")[
       #link("mailto:jdemeca01@gmail.com")
       #sym.emptyset
-      (442) 189 7740
-      #sym.emptyset
       México, Querétaro Querétaro
       #sym.emptyset
       #show link: underline
@@ -93,14 +91,6 @@
 
 #line(length: 100%, end: none)
 
-// Keywords
-// #par()[
-//   #text(size: 14pt)[
-//     Hi! I’m Jorge, a developer with a strong problem-solving mindset and an unwavering passion for lifelong learning.
-//     My journey in software development has allowed me to cultivate a deep understanding of emerging technologies and expertise in crafting innovative solutions.
-//   ]
-// ]
-
 // Items
 #NewSectionHeader("Work Experience")
 
@@ -108,15 +98,15 @@
   Company:"Visteon Corporation",
   Title: "Software Engineer",
   Date:"Ago. 2022 - Present",
-  Keywords:"HMI Developer & Internal Tools Architect",
+  Keywords:"HMI Developer",
   Experiences: (
-    "Key role in the development of v363, v710, v769 & p758 ford programs HMI.",
+    "Key role in the development of V363, V710, V769 & P758 Ford programs HMI.",
     "Led code reviews and static analysis to uphold quality standards.",
     "Proactively reviewed and analyzed requirements to deliver solid solutions.",
     "Participated in CES concepts, representing the company's solutions.",
     "Led the upgrade of existing legacy frameworks to enhance efficiency and alleviate workflow pain points.",
     "Led the creation of new tools and frameworks to enhance developer productivity.",
-    "Skills in Unix, IPC, CAN, Networking, reverse engineering data analysis and data engineering for internal projects.",
+    "Skills in Unix, IPC, CAN, Networking, reverse engineering, data analysis & data engineering dedicated to enhancing efficiency and innovation in internal projects.",
   )
 )
 
@@ -130,7 +120,7 @@
     "Developed custom applications that helped clients to improve internal processes and increase revenue.",
     "Implemented Agile workflows in the team.",
     "Focus on fulfill customer needs & delivering a reliable solution.",
-    "Designed a management platform for a retail store that increased sales by 15%",
+    "Designed a management platform for a retail store that increased sales by up to 25%",
   )
 )
 
